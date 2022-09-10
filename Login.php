@@ -30,7 +30,7 @@
 			$Err = "Username and password required.";
 		} else {
 			$username = test_input($_POST["username"]);
-			if (!preg_match("/^[a-zA-Z0-9_!'{}[], ]*$/",$username)) {
+			if (preg_match(";",$username)) {
   				$Err = "SQL Injection is not allowed.";
 			}
 		}
@@ -39,7 +39,7 @@
 			$Err = "Username and password required.";
 		} else {
 			$password = test_input($_POST["password"]);
-			if (!preg_match("/^[a-zA-Z0-9_!'{}[], ]*$/",$password)) {
+			if (preg_match(";",$password)) {
   				$Err = "SQL Injection is not allowed.";
 			} else {
 				//If we got here, I'm assuming the inputs are safe
