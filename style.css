@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* 
+=======================================
+CSS Document for myrobuxgenerator.site
+document created 7/29/22
+=======================================
+*/
+
+/*Text related styling*/
+@font-face { /*rawhide raw*/
+	font-family: Rawhide Raw; src:url("font/rawhide_raw_2012.ttf"); 
+}
+@font-face { /*rawhide raw*/
+	font-family: Airstrike3D; src:url("font/airstrike3d.ttf"); 
+}
+.mainTitle {
+	font-size:100px;
+	font-family: "Airstrike3D";
+	color:#00b06f;
+}
+span, p {
+	font-size:20px;
+	font-family:"Arial";
+}
+.green {
+	color:#00b06f;
+}
+
+/*img related styling*/
+img {
+
+}
+
+/*Div styling of the site*/
+.divTop {
+	position:absolute;
+	top: 0%;
+	left: 0%;
+	width:100%;
+	background-color:#dee1e3;
+	
+	text-align: center;
+}
+
+.divMain { /* The div class for the main portion of the website */
+	top: 20%;
+	left:0px;
+}
+.divMain { /* The div class for the main portion of the website */
+	
+	margin-top:15%; /*to hopefully prevent it from being covered by the top div*/
+	
+	top:0px;
+	left:0px;
+}
+.divBottom { /*The footer for the bottom portion of the website (copyright information) COPIED FROM PERSONAL*/
+	position:absolute;
+	left: 0%;
+	width:100%;
+	
+	background-color:#dee1e3;
+	color: black;
+	
+	/*padding*/
+	padding-top:6px;
+	padding-bottom:6px;
+	
+	text-align: center;
+}
+
+.logonDiv { /*The div for the logon page*/
+	margin: 0 auto;
+	background-color:#dee1e3;
+	
+	display: flex;
+	justify-content: center;
+	
+	position:absolute;
+	width:25%;
+	height:50%;
+	
+	border-radius:25px;
+}
+
+/*
+CODE FOR STICKY FOOTER
+===========================================================================
+*/
+html, body {
+ 	height: 100%;
+}
+body {
+  	display: flex;
+  	flex-direction: column;
+	
+
+}
+.content {
+  	left:0%;
+	width:"100%";
+	
+	flex: 1 0 auto;
+	padding-top:0%; /*changed to 0 percent */
+	
+	background-color:white;
+}
+.footer {
+  	flex-shrink: 0;
+}
+/*
+===========================================================================
+*/
+
+div { /*For preventing selecting text */
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+

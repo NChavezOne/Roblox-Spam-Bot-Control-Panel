@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:"Arial";
+}
+	.collapsible {
+  	background-color: #777;
+ 	color: white;
+  	cursor: pointer;
+  	padding: 18px;
+  	width: 100%;
+  	border: none;
+  	text-align: left;
+  	outline: none;
+  	font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  	background-color: #555;
+}
+
+.content {
+  	padding: 0 18px;
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+  	background-color: #f1f1f1;
+}
+.changegroupdiv {
+	background-color:lightgray;
+}
+			
+/*Inline CSS for dynamic client menu*/
+.carousel {  
+  	display: flex;
+  	overflow: auto;
+  	scroll-snap-type: x mandatory; /* <- the important piece */
+	scroll-padding: 0 24px /* added by nic*/
+}  
+.carousel .item {  
+	list-style:none;
+	
+	height: 370px;
+  	width: 370px;
+ 	background-color: #D7D7D7;
+	border-radius: 20px;
+	
+  	margin-right: 5px;
+  	flex-shrink: 0;
+  	scroll-snap-align: start;
+}  
+p.clientText {
+	line-height:6px;
+}
+.clientText {
+	text-align:center;
+}
+.clientImg {
+    display:block;
+    margin:auto;
+}

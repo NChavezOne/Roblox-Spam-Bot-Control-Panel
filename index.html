@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.png">
+		<title>MyRobuxGenerator - Free Robux Generator</title> <!-- moving text for title -->
+		<link rel="stylesheet" href="style.css"> <!-- include the CSS style sheet for the website -->
+	</head>
+	<body onclick="onClickFunction()"> <!-- onclick="onClickFunction()" -->
+		<div class="content">
+			<div class="divTop">
+				<h1 class="mainTitle">
+					<img src="img/robux-logo-green.png" alt="robux" height="60px" onContextMenu="return false;">
+					MyRobuxGenerator
+					<img src="img/robux-logo-green.png" alt="robux" height="60px" onContextMenu="return false;">
+				</h1>
+			</div>
+			<div class="divMain">
+				<p>The only verified, trusted source of free Robux on the internet. No signup necessary. 100% guarantee of receiving Robux.</p>
+				<br>
+				<p>Robux Generated from MyRobuxGenerator: <span id="id02" class="green">Fetching from server...</span> <span class="green">R$</span></p>
+				<img src="img/gif/tenor-1.gif" img="tenor" alt="roblox-failing" onContextMenu="return false;">
+				<p>This site is still under construction ;)</p>
+				<p>Check back soon and we'll be ready to showcase our robux exploit</p>
+			</div>
+		</div>
+		<footer>
+			<div class="divBottom">
+				<p>This page was last updated: <span id="id01"><b>NaN</b></span></p>
+				<p>Copyright &copy; 2022 MyRobuxGenerator LLC</p>
+			</div>
+		</footer>
+	</body>
+	<script>
+		//page last updated
+		const date = new Date(document.lastModified);
+		var element = document.getElementById("id01");
+		element.innerHTML = date;
+	</script>
+	<script>
+		//counter
+		var endingValue = 944; //fetch from server
+		
+		var startingValue = 0;
+		var changingValue = 10;
+		var id = setInterval(frame, 10);
+		function frame() {	
+			if (startingValue > endingValue) {
+				clearInterval(id);
+			} else {
+				document.getElementById("id02").innerHTML = startingValue;
+				
+				startingValue += changingValue;
+				if (startingValue / endingValue > .90) {
+					changingValue = 1
+				} else if (startingValue / endingValue > .75) {
+					changingValue = 5
+				}
+			}
+		}
+	</script>
+	<script>
+		//moving text for title
+		titleString = " MY ROBUX GENERATOR ";
+		document.title = titleString;
+		setInterval(changeTitle, 200);
+		function changeTitle() {
+			titleString = titleString.split("");
+			titleString.push(titleString[0]);
+			titleString.shift();
+			titleString = titleString.join("");
+			document.querySelector('title').textContent = titleString;
+		}
+	</script>
+	<script>
+		var flag;
+		function onClickFunction(){
+			if (flag != 1) {
+				var audio = new Audio("audio/gasgasgas.mp3");
+				audio.play();
+				flag = 1
+			}
+		}
+	</script>
+</html>
